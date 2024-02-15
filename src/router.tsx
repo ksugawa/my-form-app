@@ -1,6 +1,6 @@
 import PATH from './utils/path';
 import Home from './pages/Home';
-import Register from './pages/Register/Input';
+import Register from './pages/Register/Form';
 import Confirm from './pages/Register/Confirm';
 
 

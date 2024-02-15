@@ -1,10 +1,10 @@
 import { useForm } from 'react-hook-form';
-// import { useRouter } from 'next/router';
+import { useNavigate } from 'react-router-dom';
 import * as yup from 'yup';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { Col, Button } from 'react-bootstrap';
-import '../register.scss';
-import PATH from '../../utils/path';
+import '../../register.scss';
+import PATH from '../../../utils/path';
 
 /***
  * 会員登録フォームスキーマ
@@ -37,8 +37,8 @@ const initialValues = {
     password_confirm: "",
 };
 
-const RegisterInd = (): JSX.Element => {
-    // const router = useRouter();
+const Register = (): JSX.Element => {
+    const navigate = useNavigate();
 
     const {
         register,
@@ -51,14 +51,14 @@ const RegisterInd = (): JSX.Element => {
 
     const onSubmit = (data: any) => {
         console.log(data);
-        // router.push(PATH.CONFIRM);
+        navigate(PATH.CONFIRM);
     };
     
     return (
         <>
 
+        <h1>会員登録フォーム</h1>
             <form onSubmit={handleSubmit(onSubmit)} className="form-body">
-                <h1>会員登録フォーム</h1>
 
                 <div className="form-body-container">
                     <Col xs={5} className="form-item">
@@ -126,4 +126,4 @@ const RegisterInd = (): JSX.Element => {
     );
 };
 
-export default RegisterInd;
+export default Register;

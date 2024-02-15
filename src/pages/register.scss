@@ -1,0 +1,81 @@
+@import '~bootstrap/scss/bootstrap';
+
+.button-add {
+    width: 150px;
+    background-color: #ff8c37;
+    color: #fff;
+    border: none;
+  }
+  
+  .submit-btn {
+    display: block;
+    margin: 2rem auto;
+    width: 150px;
+  }
+  
+  .address-serach-btn {
+    font-size: 14px;
+    border: 1px solid #232323;
+    background: #fff;
+    color: #232323;
+  }
+  
+  .form-body {
+    width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    .form-details-contents {
+      text-align: center;
+      padding: 1rem 0;
+    }
+    .form-body-container {
+      margin: 2rem auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      label {
+        width: 100%;
+        margin-bottom: 4px;
+      }
+      .form-item {
+        align-items: center;
+        justify-content: flex-start;
+        padding: 1rem 0;
+      }
+      .required {
+        font-size: 12px;
+        border-radius: 12px;
+        padding: 2px 8px;
+        margin-left: 8px;
+        color: #fff;
+        background: #ff5c4d;
+      }
+      input {
+        width: 100%;
+        border: 1px solid #8c8c8c;
+        border-radius: 8px;
+        padding: 4px 12px;
+      }
+      ::placeholder {
+        color: #7d7d7d;
+      }
+      .check-box-area {
+        justify-content: center;
+        text-align: center;
+  
+        input.checkBox {
+          width: 22px;
+          height: 22px;
+          background: #fff;
+          display: inline-block;
+          margin-right: 1rem;
+        }
+      }
+      .error-msg {
+        color: #d92b2b;
+        font-size: 12px;
+        font-weight: bold;
+      }
+    }
+  }
